@@ -1,0 +1,141 @@
+:root{
+    --blanco : #ffffff;
+    --negro : #000000;
+    --primario : #ffc107;
+    --secundario : #0097a7;
+    --gris : #757575;
+    --rojo : #d00000;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para box model */
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.titulo{
+    text-align: center;
+    color: var(--negro);
+}
+
+.contenedor{
+    width: 80rem;
+    margin: 0 auto;
+}
+
+.navegacion{
+    position: sticky;
+    top: 0 ;
+    left: 0;
+    z-index: 5555;
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+     background-color: var(--primario);
+     color: var(--primario);
+}
+
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .boton{
+        width: auto;
+      }
+}
+.footer{
+    text-align: center;
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.contenido{
+    font-family: 'Playfair Display', serif;
+    width: 70%;
+    font-size: 2rem;
+    word-spacing: .5rem;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.github:visited{
+    color: black;
+}
+.linkedin:visited{
+    color: darkblue;
+}
+.certificados:visited{
+    color: goldenrod;
+}
+
+.chat-wp{
+    background-color: #128c7e;
+    width: auto;
+    margin: 0 auto;
+}
+
+.wp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Utilidades */
+
+.nav-bg{
+    background-color: var(--secundario) ;
+}
+

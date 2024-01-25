@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="estilos/normalize.css" as="style">
+    <link rel="stylesheet" href="estilos/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Krub:wght@400;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="estilos/contacto.css" as="style">
+    <link rel="stylesheet" href="estilos/contacto.css">
+
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1 class = "titulo">Christian Angel <span>Freelancer</span></h1>
+    </header>
+    <div class="nav-bg navegacion">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="acerca de.html">Sobre mi</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+
+    <main>
+        <h2 class="titulo">Información: </h2>
+
+        <div class="contenedor-tabla">
+            <table class="tabla">
+                <thead class="celda-principal">
+                    <tr>
+                        <th class="celda-principal">Dias</th>
+                        <th class="celda-principal">Horarios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="dias">Lunes</th>
+                        <td>9:00-17:00</td>
+                    </tr>
+                    <tr>
+                        <th class="dias">Martes</th>
+                        <td>9:00-17:00</td>
+                    </tr>
+                    <tr>
+                        <th class="dias">Miercoles</th>
+                        <td>9:00-17:00</td>
+                    </tr>
+                    <tr>
+                        <th class="dias">Jueves</th>
+                        <td>9:00-17:00</td>
+                    </tr>
+                    <tr>
+                        <th class="dias">Viernes</th>
+                        <td>9:00-17:00</td>
+                    </tr>
+                    <tr>
+                        <th class="dias">Sabado</th>
+                        <td class="cerrado">Cerrado</td>
+                    </tr>
+                    <tr>
+                        <th class="dias">Domingo</th>
+                        <td class="cerrado">Cerrado</td>
+                    </tr>
+                    <tr>
+                        <th class="dias">Feriados</th>
+                        <td class="cerrado">Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <section></section>
+    </main>
+
+
+    <section> 
+        <h2 class="titulo">Contacto</h2>
+
+        <form class="formulario" id="contacto" method="post">
+            <fieldset>
+                <legend>Contactame llenando todos los campos</legend>
+                
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <label for="nombre"> Nombre y Apellido: </label>
+                        <input class="input-text" type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono"> Teléfono: </label>
+                        <input class="input-text" type="tel" id="telefono" placeholder="Ej: 11 12345678" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Email: </label>
+                        <input class="input-text" type="email" id="email" placeholder="Ej: juanperez@mail.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="input-text" id="mensaje"></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <fieldset>
+                            <legend>¿Como te gustaría que te contactemos?</legend>
+                            <label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="contacto" checked> WhatsApp</label>
+                            <label for="radio-llamada"><input type="radio" value="Llamada" id="radio-llamada" name="contacto"> Llamada</label>
+                            <label for="radio-email"><input type="radio" value="email" id="radio-email" name="contacto"> Correo Electrónico</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="campo">
+                        <fieldset>
+                            <legend>¡En cuál horario prefiere ser atendido?</legend>
+                            <select>
+                                <option>Mañana</option>
+                                <option>Tarde</option>
+                                <option>Noche</option>
+                            </select>
+                        </fieldset>
+                    </div>
+
+                </div>
+
+                <div class="w-sm-100 flex alinear-derecha margen-top">
+                    <input class="boton" type="submit" value="Enviar">
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer"> <p>Todos los derechos reservados, Christian Angel Freelancer</p> </footer>
+</body>
+</html>
